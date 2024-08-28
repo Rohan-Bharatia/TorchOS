@@ -32,5 +32,4 @@
 Thumbs.db
 
 # Any other files that are generated during the build process
-build/
 dist/
