@@ -1,0 +1,23 @@
+name: Build MacOS
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-macos:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Make build script executable
+      run: chmod +x build/macos.sh
+
+    - name: Build for macOS
+      run: ./build/macos.sh

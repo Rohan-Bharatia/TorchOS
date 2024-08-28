@@ -1,0 +1,23 @@
+name: Build QEMU
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-qemu:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Make build script executable
+      run: chmod +x build/qemu.sh
+
+    - name: Build for QEMU
+      run: ./build/qemu.sh
