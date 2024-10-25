@@ -10,4 +10,6 @@ TorchOS is an open-source operating system written entirely in x86 assembly that
 This repository is under an [Gnu General Public License v3.0](https://github.com/Rohan-Bharatia/TorchOS/blob/main/LICENSE)
 
 ## Implementation
-To download this repository open [TorchOS.zip](https://github.com/Rohan-Bharatia/TorchOS/archive/refs/tags/v1.0.0.zip)
+To download this repository open [TorchOS.zip](https://github.com/Rohan-Bharatia/TorchOS/archive/refs/tags/v1.0.0.zip) or [TorchOS.tar.gz](https://github.com/Rohan-Bharatia/TorchOS/archive/refs/tags/v1.0.0.tar.gz)
+or clone with git:
+```git clone git@https://github.com/Rohan-Bharatia/TorchOS Torch```
