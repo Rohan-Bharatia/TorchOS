@@ -543,7 +543,7 @@ text_entry:
 	call os_run_basic
 
 	call os_print_newline
-	mov si, .basic_finished_msg
+	mov si, .BASic_finished_msg
 	call os_print_string
 	call os_wait_for_key
 	call os_show_cursor
@@ -561,7 +561,7 @@ text_entry:
 	popa
 	jmp render_text
 
-	.basic_finished_msg	db ">>> BASIC finished - hit a key to return to the editor", 0
+	.BASic_finished_msg	db ">>> BASIC finished - hit a key to return to the editor", 0
 	.fail1_msg		    db 'Not enough BASIC code to execute!', 0
 	.fail2_msg		    db 'You need at least an END command.', 0
 
@@ -763,7 +763,7 @@ showbytepos:
 
 	txt_extension db 'txt', 0
 	bas_extension db 'bas', 0
-	wrong_ext_msg db 'You can only load .txt or .bas files!', 0
+	wrong_ext_msg db 'You can only load .txt or .BAS files!', 0
 	confirm_msg	  db 'Are you sure? Unsaved data will be lost!', 0
 
 	file_load_fail_msg	  db 'Could not load file! Does it exist?', 0

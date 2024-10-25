@@ -5,7 +5,7 @@ REM Email: rohan.bharatia@outlook.com
 REM Licenced under the GNU General Public Licence revision 3.
 REM Requires TorchOS version 4.3 or greater.
 
-PRINT "MB++ Library version 3.2.3"
+PRINT "TB++ Library version 3.2.3"
 END
 
 ANCITEXT:

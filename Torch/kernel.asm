@@ -127,9 +127,9 @@ no_change:
 
     call os_seed_random           ; Seed random number generator
 
-    mov ax, autorun_bin_file_name ; Checks for a file called 'autorun.bin'
+    mov ax, autorun_bin_file_name ; Checks for a file called 'autorun.BIN'
     call os_file_exists
-    jc no_autorun_bin             ; Skips next bit of code if 'autorun.bin' doesn't exist (Lines  133 - 137)
+    jc no_autorun_bin             ; Skips next bit of code if 'autorun.BIN' doesn't exist (Lines  133 - 137)
 
     mov cx, 32768                 ; Load program into RAM
     call os_load_file
@@ -138,7 +138,7 @@ no_change:
 no_autorun_bin:
     mov ax, autorun_bas_file_name
 	call os_file_exists
-	jc option_screen		      ; Skip next section if 'autorun.bas' doesn't exist
+	jc option_screen		      ; Skip next section if 'autorun.BAS' doesn't exist
 
 	mov cx, 32768			      ; Load program into RAM
 	call os_load_file
@@ -185,10 +185,10 @@ app_selector:
 					
 	jc option_screen		      ; Return to the CLI/menu choice screen if Esc pressed
 
-	mov si, ax			          ; Check if user tried to run 'kernel.bin'
+	mov si, ax			          ; Check if user tried to run 'kernel.BIN'
 	mov di, kern_file_name
 	call os_string_compare
-	jc no_kernel_execute		  ; Show an error message if user tried to run 'kernel.bin'
+	jc no_kernel_execute		  ; Show an error message if user tried to run 'kernel.BIN'
 
 	push si				          ; Save filename temporarily
 
@@ -292,20 +292,20 @@ not_bas_extension:
 	jmp app_selector		     ; Restart
 
 
-	kern_file_name		db 'bin/kernel.bin', 0
+	kern_file_name		db 'bin/kernel.BIN', 0
 
-	autorun_bin_file_name	db 'bin/autorun.bin', 0
-	autorun_bas_file_name	db 'bin/autorun.bin', 0
+	autorun_bin_file_name	db 'bin/autorun.BIN', 0
+	autorun_bas_file_name	db 'bin/autorun.BIN', 0
 
 	bin_ext			db 'bin'
 	bas_ext			db 'bas'
 
 	kerndlg_string_1	db 'Cannot load and execute TorchOS kernel!', 0
-	kerndlg_string_2	db 'kernel.bin is the core of TorchOS, and', 0
+	kerndlg_string_2	db 'kernel.BIN is the core of TorchOS, and', 0
 	kerndlg_string_3	db 'is not a normal program.', 0
 
 	ext_string_1		db 'Invalid filename extension! You can', 0
-	ext_string_2		db 'only execute .bin or .bas programs.', 0
+	ext_string_2		db 'only execute .BIN or .BAS programs.', 0
 
 	basic_finished_msg	db '>>> BASIC program finished -- press any key', 0
 

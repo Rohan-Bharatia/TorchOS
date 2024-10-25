@@ -488,8 +488,8 @@ exit:
 	file_size  dw 0
 	param_list dw 0
 
-	bin_extension db '.bin', 0
-	bas_extension db '.bas', 0
+	bin_extension db '.BIN', 0
+	bas_extension db '.BAS', 0
 
 	prompt db '> ', 0
 

@@ -238,10 +238,10 @@ close:
 	bas_extension db 'bas', 0
 	pcx_extension db 'pcx', 0
 
-	err_string db 'Please select a .txt, .bas or .pcx file!', 0
+	err_string db 'Please select a .txt, .BAS or .pcx file!', 0
 
 	title_msg  db 'TorchOS File Viewer', 0
-	footer_msg db 'Select a .txt, .bas or .pcx file to view, or press Esc to exit', 0
+	footer_msg db 'Select a .txt, .BAS or .pcx file to view, or press Esc to exit', 0
 
 	txt_title_msg  db 'TorchOS Text File Viewer', 0
 	txt_footer_msg db 'Use arrow keys to scroll and Q to quit', 0

@@ -5,7 +5,7 @@ rem Mail: rohan.bharatia@outlook.com
 rem Licenced under the GNU General Public Licence, see licence.txt
 
 rem Requires the MB++ library, version 3.2.2 or greater
-include "mbpp.bas"
+INCLUDE "TBPP.BAS"
 
 initlib:
   gosub startprg

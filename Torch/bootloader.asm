@@ -293,7 +293,7 @@ l2hts:								 ; Calculate head, track, and sector settings for int 13h
 kern_filename	db "KERNEL  BIN"	 ; TorchOS kernel filename
 
 disk_error		db "Floppy error! Press any key...", 0
-file_not_found	db "kernel.bin not found!", 0
+file_not_found	db "kernel.BIN not found!", 0
 
 bootdev	db 0 					 	 ; Boot device number
 cluster	dw 0 					 	 ; Cluster of the file to load

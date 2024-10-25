@@ -5,7 +5,7 @@ rem Email: rohan.bharatia@outlook.com
 rem Licenced under the GNU General Public Licence v3, see LICENCE
 
 rem Requires the MB++ library, version 3.2.3 recommended
-include "mbpp.bas"
+INCLUDE "TBPP.BAS"
 
 parameters:
   if $1 = "" then goto init

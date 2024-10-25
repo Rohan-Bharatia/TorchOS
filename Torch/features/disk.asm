@@ -892,7 +892,7 @@ os_get_file_size:
 
 
 ; Internal OS routines
-int_filename_convert:             ; Change 'test.bin' into 'test    bin' as per FAT12
+int_filename_convert:             ; Change 'test.BIN' into 'test    bin' as per FAT12
 	pusha
 
 	mov si, ax

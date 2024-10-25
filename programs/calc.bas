@@ -6,7 +6,7 @@ rem Released under the GNU General Public Licence version 3
 rem Send any bugs, ideas or comments to rohan.bharatia@outlook.com
 
 rem Uses the MB++ Library version 3.0
-INCLUDE "MBPP.BAS"
+INCLUDE "TBPP.BAS"
 
 START:
   CLS
